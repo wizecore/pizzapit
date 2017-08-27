@@ -14,7 +14,7 @@ In future we will bring web interface.
 
 ## Example conversation (with context)
 
-```bash
+```
 INFO: Requesting Привет!
 INFO: Got response: Добрый день! Я могу автоматом заказать вам пиццу!, {total="0"}
 INFO: Requesting Заказать пиццу
@@ -37,6 +37,11 @@ INFO: Requesting да
 INFO: Got response: Заказ передан в доставку! Спасибо!, {orderstatus="confirm"}
 INFO: Final context {total="0", ordercrust=["thin","thick"], orderstatus="confirm", ordersize=["33","28"], lastprice="699", ordertotal=["779","699"], orderlist=["bavarskaya","3meat"]}
 ```
+
+## Video capture of interaction
+
+[![Video capture](capture1.png)](https://www.youtube.com/watch?v=SXMudUG9Dmo&vq=hd720)
+
 
 ## Example api.ui project (dump available in repository)
 
