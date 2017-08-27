@@ -105,6 +105,9 @@ public class APIAIConversation implements TextConversation {
 					a.add(new JsonPrimitive(val));
 					log.info("Replaced " + var + " last value " + oval + " with " + val);
 				}
+				
+				// Remove j_
+				it.remove();
 			} else {
 				JsonElement ov = merged.get(k);
 				JsonElement v = r.getParameters().get(k);
