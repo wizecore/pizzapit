@@ -24,10 +24,10 @@ INFO: Got response: Баварская пицца по цене 699 рублей
 INFO: Requesting 33 см
 INFO: Replaced ordertotal last value "699" with 779
 INFO: Replaced ordersize last value "28" with 33
-INFO: Got response: Размер последней пиццы установлен в 33 см, {j_changelast-1="ordertotal:779", j_changelast="ordersize:33"}
+INFO: Got response: Размер последней пиццы установлен в 33 см, {}
 INFO: Requesting тонкое тесто
 INFO: Replaced ordercrust last value "thick" with thin
-INFO: Got response: Тесто установлено на тонкое, {j_changelast="ordercrust:thin"}
+INFO: Got response: Тесто установлено на тонкое, {}
 INFO: Requesting пицца 3 мяса
 INFO: Got response: Пицца 3 мяса по цене 699 рублей добавлена в заказ, {ordercrust=["thick"], ordersize=["28"], lastprice="699", ordertotal=["699"], orderlist=["3meat"]}
 INFO: Requesting оформить
@@ -37,3 +37,9 @@ INFO: Requesting да
 INFO: Got response: Заказ передан в доставку! Спасибо!, {orderstatus="confirm"}
 INFO: Final context {total="0", ordercrust=["thin","thick"], orderstatus="confirm", ordersize=["33","28"], lastprice="699", ordertotal=["779","699"], orderlist=["bavarskaya","3meat"]}
 ```
+
+## Example api.ui project (dump available in repository)
+
+![List of intents](apiai1.png)
+
+![Editing intent](apiai2.png)
