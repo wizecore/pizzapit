@@ -8,7 +8,7 @@ This example implements simplified Pizza order service from hello to delivery.
 
 ## Running
 
-  * See TestConversation.java and TestPolly unit test cases
+  * See TestConversation.java and TestPolly.java unit test cases
   
 In future we will bring web interface.
 

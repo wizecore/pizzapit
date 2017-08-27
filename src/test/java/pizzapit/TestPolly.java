@@ -11,8 +11,6 @@ import com.wizecore.pizzapit.aws.PollySpeechClient;
 
 import javazoom.jl.decoder.JavaLayerException;
 import javazoom.jl.player.advanced.AdvancedPlayer;
-import javazoom.jl.player.advanced.PlaybackEvent;
-import javazoom.jl.player.advanced.PlaybackListener;
 
 public class TestPolly {
 
@@ -24,23 +22,7 @@ public class TestPolly {
 	
 	public static void playMp3(InputStream speechStream) {
 		try {
-			AdvancedPlayer player = new AdvancedPlayer(speechStream,
-					javazoom.jl.player.FactoryRegistry.systemRegistry().createAudioDevice());
-	
-			player.setPlayBackListener(new PlaybackListener() {
-				@Override
-				public void playbackStarted(PlaybackEvent evt) {
-					System.out.println("Playback started");
-				}
-				
-				@Override
-				public void playbackFinished(PlaybackEvent evt) {
-					System.out.println("Playback finished");
-				}
-			});
-			
-			
-			// play it!
+			AdvancedPlayer player = new AdvancedPlayer(speechStream, javazoom.jl.player.FactoryRegistry.systemRegistry().createAudioDevice());
 			player.play();
 			speechStream.close();
 		} catch (Exception e) {
