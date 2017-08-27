@@ -1,10 +1,12 @@
 # PizzaPit
 
-This project illustrates using [API.AI](https://api.ai/) for enabling rich conversation.
+This project illustrates using [API.AI](https://api.ai/) for enabling rich conversation in Russian.
 
-Also using TTS service such as Amazon Polly responses can be transformed into speech.
+Also using TTS service such as Amazon Polly so responses are transformed into speech.
 
 This example implements simplified Pizza order service from hello to delivery.
+
+__THIS EXAMPLE IMPLEMENTED IN RUSSIAN LANGUAGE!__
 
 ## Running
 
