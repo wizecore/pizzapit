@@ -1,4 +1,4 @@
-# PizzaPit
+![PizzaPit - AI assisted voice pizza order](pizzapit-dan-gold-249370.png)
 
 This project illustrates using [API.AI](https://api.ai/) for enabling rich conversation in Russian.
 
