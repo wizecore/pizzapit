@@ -13,9 +13,16 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<spring.version>4.3.8.RELEASE</spring.version>
+		<metrics.version>3.2.1</metrics.version>
 	</properties>
 
 	<dependencies>
+		<dependency> 
+			<groupId>com.wizecore</groupId>
+			<artifactId>persistent-metrics</artifactId>
+			<version>0.6</version>
+		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-polly -->
 		<dependency>
 			<groupId>com.amazonaws</groupId>
@@ -54,7 +61,21 @@
 			<artifactId>guava</artifactId>
 			<version>23.0</version>
 		</dependency>
-		
+
+
+		<dependency>
+			<groupId>io.dropwizard.metrics</groupId>
+			<artifactId>metrics-core</artifactId>
+			<version>${metrics.version}</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.redisson</groupId>
+			<artifactId>redisson</artifactId>
+			<version>3.3.1</version>
+		</dependency>
+
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
@@ -66,11 +87,11 @@
 			<artifactId>libai</artifactId>
 			<version>1.1.0</version>
 			<exclusions>
-		        <exclusion>
-		            <groupId>org.apache.logging.log4j</groupId>
-		            <artifactId>log4j-slf4j-impl</artifactId>
-		        </exclusion>
-		    </exclusions>
+				<exclusion>
+					<groupId>org.apache.logging.log4j</groupId>
+					<artifactId>log4j-slf4j-impl</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 
 		<dependency>
@@ -97,10 +118,18 @@
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>3.8.1</version>
+			<version>4.11</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
+	<repositories>
+		<repository>
+			<id>jitpack.io</id>
+			<url>https://jitpack.io</url>
+		</repository>
+	</repositories>
+
 	<build>
 		<finalName>pizzapit</finalName>
 	</build>

@@ -33,7 +33,7 @@ public class TestPolly {
 	
 	@Test
 	public void test() throws JavaLayerException, IOException {
-		InputStream is = speech.synthesize("Привет! Тебя приветсвует Amazon Polly!", Text2Speech.OutputFormat.MP3);
+		InputStream is = speech.synthesize("РџСЂРёРІРµС‚! РўРµР±СЏ РїСЂРёРІРµС‚СЃРІСѓРµС‚ Amazon Polly!", Text2Speech.OutputFormat.MP3);
 		playMp3(is);
 	}
 }
